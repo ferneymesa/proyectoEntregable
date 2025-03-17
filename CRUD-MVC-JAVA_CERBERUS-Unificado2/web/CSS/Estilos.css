@@ -1,0 +1,342 @@
+/* 
+    Created on : 30/11/2024, 10:21:19 p. m.
+    Author     : Usuario
+*/
+
+.cssBody{
+    text-align: center;
+    background: linear-gradient(85deg, #1a29e5, #0ff, #ffffff);
+}
+
+/*.cssBody{
+    text-align: center;
+    background: linear-gradient(85deg, #1a29e5, #0ff, #ffffff);
+} */
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.body-add{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+.logoImg{
+    width: 70%;
+}
+
+.textos{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title-index, .title-buscar{
+    text-decoration: none;
+    color: black;
+
+}
+
+.title-index:hover , .title-buscar:hover {
+    color: #00008B;
+    font-size: 27px;
+    padding: 10px;
+    margin:0;
+    border-bottom: 2px solid #00008B;
+    border: 2px solid #00008B;
+    border-radius: 5px;
+}
+
+.body-listar{
+    text-align: center;
+    background: linear-gradient(85deg, #1a29e5, #0ff, #ffffff);
+}
+
+.containerDiv{
+    width: 95%;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.tabla {
+    border-collapse: collapse;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#tablaRh{
+    display: inline-block;
+    overflow-x: auto;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla th {
+    background-color: #f2f2f2;
+    color: black;
+    text-align: center;
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Ajustes para pantallas de 769px en adelante */
+@media (min-width: 769px) {
+    .tabla {
+        display: block;
+        overflow-x: auto;
+
+    }
+
+    .tabla th:nth-child(1), .tabla td:nth-child(1) {
+        width: 5%;
+        text-align: center;
+    }
+
+    .tabla th:nth-child(2), .tabla td:nth-child(2) {
+        width: 20%;
+    }
+
+    .tabla td:nth-child(2){
+        max-width: 180px;      /* Define el ancho máximo de la celda */
+        height: 2em;           /* Altura para dos líneas (basado en line-height) */
+        line-height: 1.5em;    /* Altura de una línea */
+        overflow: hidden;      /* Oculta el texto sobrante */
+        text-overflow: ellipsis; /* Muestra puntos suspensivos */
+        white-space: normal;
+    }
+
+    .tabla th:nth-child(3), .tabla td:nth-child(3) {
+        width: 30%;
+    }
+
+    .tabla td:nth-child(3){
+        max-width: 180px;      /* Ajusta el ancho máximo */
+        height: 2em;
+        white-space: nowrap;   /* Evita que el texto haga saltos de línea */
+        overflow: hidden;      /* Oculta el texto que no cabe */
+        text-overflow: ellipsis; /* Agrega los puntos suspensivos */
+        direction: initial;
+    }
+
+    .tabla th:nth-child(4), .tabla td:nth-child(4) {
+        width: 15%;
+        max-width: 180px;
+    }
+
+    .tabla th:nth-child(5), .tabla td:nth-child(5) {
+        width: 15%;
+        max-width: 180px;
+    }
+
+
+    .tabla th:nth-child(6), .tabla td:nth-child(6) {
+        width: 10%;
+        max-width: 180px;
+    }
+
+    .tabla td:nth-child(7){
+        max-width: 180px;      /* Define el ancho máximo de la celda */
+        height: 2em;           /* Altura para dos líneas (basado en line-height) */
+        line-height: 1.5em;    /* Altura de una línea */
+        overflow: hidden;      /* Oculta el texto sobrante */
+        text-overflow: ellipsis; /* Muestra puntos suspensivos */
+        white-space: normal;
+    }
+
+    .tdVarTd {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .tabla {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}
+
+.botonera{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botonera a{
+    color: black;
+    font-size:24px;
+    margin: 10px;
+}
+
+.botonera a:hover{
+    color: #00008B;
+    font-size: 27px;
+    padding: 10px;
+    margin:0;
+    border-bottom: 2px solid #00008B;
+    border: 2px solid #00008B;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.div-add {
+    margin: 10px 0;
+    background: #e8e4e3;
+    color: white;
+    padding-top: 10px;
+}
+
+.var-add{
+    background: gray;
+    padding-top: 10px;
+}
+
+.class-var{
+    display: flex;
+    flex-direction: column;
+    background: #e8e4e3;
+    padding-top: 10px;
+
+}
+
+.class-var var{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+
+}
+
+.var-Doc p, .var-Nom p, .var-Tel p, .var-Area p, .var-Email p, .var-Empresa p, .var-Url p{
+    width: 28%;
+    height: 25px;
+    margin: 0 0 0 2%;
+    align-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: #020c2e;
+    color: white;
+}
+
+.h1-add{
+    background: #020c2e;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+}
+.var-Doc input, .var-Nom input, .var-Tel input, .var-Area input, .var-Email input, .var-Empresa input, .var-Url input{
+    width: 70%;
+    height: 25px;
+    align-content: center;
+    margin: 10px 10px 10px 5px;
+    font-size: 20px;
+}
+
+.var-InpAgrerar{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.inputAgregar{
+    width: 80%;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 30px;
+    background: #a1c0e1;
+    margin: 30px;
+}
+
+.inputAgregar:hover{
+    transform: scale(1.1);
+    background: #4de383;
+    border: 2px solid black;
+}
+
+.btn-Buscar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.labelBuscar{
+    width: 23%;
+    height: 30px;
+    text-align: end;
+    font-weight: bold;
+
+}
+
+.inputText{
+    width: 67%;
+    height: 30px;
+    font-size: 22px;
+
+}
+
+.inputBtn{
+    width: 20%;
+    height: 35px;
+    font-size: 24px;
+    font-weight: bold;
+    background: #a1c0e1;
+}
+
+.inputBtn:hover{
+    transform: scale(1.1);
+    background: #4de383;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+@media (max-width: 1023px) {
+    .labelBuscar{
+        font-size: 20px;
+    }
+
+    .inputBtn{
+        font-size: 20px;
+    }
+}
+
+/* css consulta controles */
+
+.divBusquedaPer{
+    display: flex;
+}
+
+.sectBusquedaPer{
+    width: 70%;
+}
